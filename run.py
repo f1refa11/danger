@@ -404,7 +404,7 @@ def levelsMode(playerRect, moveRight, moveLeft, jumpCount, airTimer, fails, game
 					if exitFromGame._rect.collidepoint(event.pos):
 						pygame.mixer.music.stop()
 						if musicChBt.checkbuttonVariable == True:
-							pygame.mixer.music.load(os.path.join(musicPath, 'menu.wav'))
+							pygame.mixer.music.load(os.path.join(musicPath, 'mainTheme.ogg'))
 							pygame.mixer.music.play(-1)
 							pygame.mixer.music.set_volume(0.3)
 						menu()
